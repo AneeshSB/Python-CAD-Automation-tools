@@ -48,3 +48,14 @@ The script follows a modular extraction pipeline:
     
     Iterate --> Export[Export IGES to Output Folder];
     Export --> Finish([Process Complete]);
+
+
+**Technical Implementation Details:**
+
+This tool interfaces with the Siemens NX session using the NXOpen library.
+
+NXOpen.Selection: Handles user interaction and UI masking to ensure only valid geometries are picked.
+
+NXOpen.Features: Traverses the feature tree to locate child objects within groups.
+
+NXOpen.UF (User Function): Used for lower-level geometric calculations where standard API wrappers are insufficient.
