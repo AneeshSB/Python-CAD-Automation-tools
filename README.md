@@ -34,6 +34,6 @@ graph LR
     A[Start: User Selects Feature Group] --> B{Validation};
     B -- Invalid --> C[Error: Invalid Selection];
     B -- Valid --> D[Traverse Geometry];
-    D --> E[Filter Curves (Composite Curve Logic)];
+    D --> E["Filter Curves (Composite Curve Logic)"];
     E --> F[Extract to New Layer];
     F --> G[End: Report Generated];
