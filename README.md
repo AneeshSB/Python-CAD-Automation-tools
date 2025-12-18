@@ -31,9 +31,21 @@ The script follows a modular extraction pipeline:
 
 ```mermaid
 graph LR
-    A[Start: User Selects Feature Group] --> B{Validation};
-    B -- Invalid --> C[Error: Invalid Selection];
-    B -- Valid --> D[Traverse Geometry];
-    D --> E["Filter Curves (Composite Curve Logic)"];
-    E --> F[Extract to Selected Folder in order from the Feature group];
-    F --> G[End: Report Generated];
+graph TD
+    Start([User Clicks 'Custom Python Tool']) --> GUI[GUI Opens];
+    
+    subgraph User_Inputs [User Configuration]
+        GUI --> SelectModel[/Select 3D Model/];
+        SelectModel --> SelectFolder[/Select Output Folder/];
+        SelectFolder --> TypeName[/Enter Feature Group Name/];
+        TypeName --> Run[Click 'Start Batch IGES Export'];
+    end
+    
+    Run --> Open[System Opens 3D Model];
+    Open --> Search{Feature Group Found?};
+    
+    Search -- No --> Error[Log Error & Stop];
+    Search -- Yes --> Iterate[Iterate Curves in Sequence];
+    
+    Iterate --> Export[Export IGES to Output Folder];
+    Export --> Finish([Process Complete]);
