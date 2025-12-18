@@ -1,4 +1,4 @@
-Siemens NX Composite Curve Automation
+**Siemens NX Composite Curve Python Automation**
 
 A Python-based engineering tool that automates the extraction of composite curves from Siemens NX CAD models, reducing manual pre-processing time by 90%
 
