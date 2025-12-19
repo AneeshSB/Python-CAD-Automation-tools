@@ -1,4 +1,4 @@
-**Siemens NX Composite Curve Python Automation**
+## Siemens NX Composite Curve Python Automation
 
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
 [![Siemens NX](https://img.shields.io/badge/Siemens_NX-NXOpen_API-FF6600?style=flat)](https://plm.sw.siemens.com/en-US/nx/)
