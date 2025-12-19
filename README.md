@@ -13,6 +13,12 @@ A Python-based engineering tool that automates the extraction of composite curve
   <img src="demo/Python Gif.gif" alt="Demo" width="700">
 </div>
 
+<div align="center">
+  <h3>
+    <a href="demo/NX_Python Script Running Video.mp4">📺 Click here to watch the full High-Quality Video</a>
+  </h3>
+</div>
+
 ## Problem Statement
 In Aerospace,Wind and automotive composite workflows, engineers must prepare CAD geometry for downstream manufacturing activities like (Layup planning, Material Cutting and Kitting, Laser projection, etc.).
 
