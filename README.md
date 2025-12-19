@@ -8,19 +8,18 @@
 A Python-based engineering tool that automates the extraction of composite curves from Siemens NX CAD models, reducing manual pre-processing time by 90%
 
 ## Demo
-*The tool in action: Selecting a feature group and automatically generating composite curves.*
 
 <div align="center">
   <img src="demo/Python Gif.gif" alt="Demo" width="700">
 </div>
 
 ## Problem Statement
-In Aerospace,Wind and automotive composite workflows, engineers must prepare CAD geometry for downstream manufacturing (Layup planning, Material Cutting and Kitting, Laser projection, etc.).
+In Aerospace,Wind and automotive composite workflows, engineers must prepare CAD geometry for downstream manufacturing activities like (Layup planning, Material Cutting and Kitting, Laser projection, etc.).
 
-## The Manual Process
+**The Manual Process**
 1.  Engineers manually identify curve boundaries on complex surfaces in 3D Model.
 2.  They use point-and-click operations to extract curves one by one and save this individually.
-3.  **Result:** This takes **15–20 minutes per part** and is prone to human selection errors.
+3.  **Result:** This takes **30-40 minutes per part** and is prone to human selection errors.
 
 ## The Solution
 I developed a Python script utilizing the **NXOpen API** to programmatically export the geometry. By inputting a single Feature Group, the algorithm detects, filters, and extracts the necessary composite curves automatically from the selected group.
@@ -133,5 +132,5 @@ With over **6 years of industrial experience** at global leaders like **General 
 My expertise lies in optimizing aerospace and wind energy workflows, moving from traditional design to Industry 4.0 implementation.
 
 * **Core Domain:** Manufacturing Engineering, Composite Design (CATIA/NX), and Digital Manufacturing.
-* **Specialized Tech:** Laser Projection Systems, Process Vision (Ply placement verification & wrinkle detection).
+* **Specialized Tech:** CATIA V5, Siemens NX, Laser Projection Systems, Process Vision (Ply placement verification & wrinkle detection).
 * **Automation:** Python scripting for CAD/CAM (NXOpen, CATIA Automation).
